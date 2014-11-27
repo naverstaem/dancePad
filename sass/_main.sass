@@ -1,4 +1,3 @@
-
 .top
 
 .navbar
@@ -249,33 +248,25 @@ header
 
 
 
-
-.info
-  padding: 40px 0
-  .info__in
-    background: url(../img/list-icon.png) left center no-repeat
-    background-position-x: 35px
-    padding: 40px 40px 40px 200px
-    border: solid 2px #c7efbd
-    font-family: 'pf_din_text_cond_prolight'
-    font-size: 18px
-    color: #1e1e1e
-
 .features
   padding-top: 45px
   background: url(../img/features_bg.png)
   +cover
+  text-align: center
+  overflow: hidden
   h3
     font-size: 36px
     font-family: 'pf_din_text_cond_prothin'
     color: #ffffff
     margin-bottom: 0
+    text-align: left
   h2
     font-size: 120px
     color: #ffffff
     font-family: 'bebas_neuebold'
     margin: 0
     line-height: .8em
+    text-align: left
   &__img
     display: inline-block
     text-align: center
@@ -287,6 +278,7 @@ header
       width: 100%
   &__text
     padding-top: 10px
+    text-align: left
     ul
       padding-left: 60px
       list-style: none
@@ -307,6 +299,89 @@ header
         &:nth-child(2), &:nth-child(3)
           &:before
             top: 6px
+
+
+
+
+
+.info
+  padding: 40px 0 50px
+  text-align: center
+  h2
+    text-align: left
+    font-size: 120px
+    font-family: 'bebas_neuebold'
+    +background-image(linear-gradient(to right, rgba(#d13181,.9) 0%, rgba(#196dc7,.9) 50%))
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    text-transform: uppercase
+  &__text
+    text-align: left
+    margin-top: 25px
+    ul
+      padding-left: 0
+      font-family: 'pf_din_text_cond_prolight'
+      font-size: 24px
+      color: #1e1e1e
+      list-style: none
+      li
+        padding-left: 21px
+        position: relative
+        height: 40px
+        +border-radius(2px)
+        +background-clip(padding-box)
+        &:nth-child(odd)
+          +background-image(linear-gradient(to left, #fff 0%, #efefef 100%))
+        &:nth-child(even)
+          height: 60px
+          line-height: 60px
+  &__bottom
+    text-align: left
+    margin-top: 45px
+    .remain
+      text-align: center
+      display: inline-block
+      p
+        font-family: 'conv_segoeprintregular'
+        font-size: 14px
+        color: #1e1e1e
+        margin-bottom: 5px
+      span
+        display: inline-block
+        width: 60px
+        height: 70px
+        position: relative
+        +border-radius(4px)
+        +background-clip(padding-box)
+        background: #1d1d1d
+        +box-shadow(inset 0 -2px 0 rgba(0,0,0,.5))
+        +background-image(linear-gradient(to bottom, #dbdbdb 0%, #8b8b8b 25%, #636363 40%, #131313 55%, #595959 100%))
+        font-size: 48px
+        color: #ffffff
+        font-family: 'bebas_neuebook'
+        &:after
+          position: absolute
+          content: ''
+          top: 32px
+          left: 0
+          width: 100%
+          height: 4px
+          +background-image(linear-gradient(to bottom, rgba(0,0,0,0) 0%,#000 100%))
+    .button--info
+      font-family: 'pf_highway_sans_probold'
+      font-size: 30px
+      height: 70px
+      width: 220px
+      padding-top: 12px
+      display: inline-block
+      vertical-align: bottom
+      margin-left: 35px
+  &__img
+    display: inline-block
+    img
+      width: 100%
+      max-width: 520px
+
 
 
 
