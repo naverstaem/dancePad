@@ -177,107 +177,77 @@ header
     margin: 130px -8px 105px
 
 .intro
-  padding-top: 75px
   &__img
     text-align: center
-    +border-radius(50%)
     position: relative
     img
       width: 100%
-      max-width: 240px
-
+      max-width: 630px
 
   &__text
-    padding-top: 30px
-    font-family: 'pf_din_text_cond_prolight'
-    h3
-      font-size: 48px
-      font-weight: normal
-      margin-bottom: 0
-      color: #bebebe
-      font-family: 'pf_din_text_cond_prothin'
-      text-transform: uppercase
+    padding-top: 140px
     h2
       font-size: 120px
-      line-height: 1em
+      line-height: .8em
       margin: 0
-      color: #f0be1e
+      color: #196ec8
+      text-transform: uppercase
+      font-family: 'bebas_neuebold'
+      span
+        +background-image(linear-gradient(to left, rgba(#d13181,.9) 0%, rgba(#196dc7,.9) 100%))
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
     p
-      font-size: 18px
+      font-size: 36px
       color: #1e1e1e
-      margin-top: 30px
-      &:first-child
-        margin-top: 0
+      margin-top: 35px
+      font-family: 'pf_din_text_cond_prothin'
 
-  .row
-    &:last-child
-      .intro__img
-        z-index: 1
-        top: 65px
-        left: -100px
-        img
-          max-width: 330px
-          width: auto
-      .intro__text
-        padding-top: 0
-
+    .button--intro
+      font-family: 'pf_highway_sans_probold'
+      font-size: 30px
+      height: 70px
+      width: 220px
+      padding-top: 12px
 
 
 .about
-  text-align: center
-  .about__img
-    display: inline-block
-    text-align: center
-    position: relative
-    +border-radius(50%)
-    img
-      width: 100%
-      +border-radius(50%)
-  p
-    text-align: left
-    font-family: 'pf_din_text_cond_prolight'
-    font-size: 24px
-    color: #1e1e1e
-    margin-top: 30px
-  &__first
-    padding: 55px 0
-    background: url(../img/about-first_bg.png) repeat
-    background-size: cover
-    img
-      max-width: 240px
-  &__second, &__third
-    padding: 40px 0
-    img
-      max-width: 320px
-  &__third
-    background: url(../img/about-third_bg.png) repeat
-    background-size: cover
-    padding-bottom: 70px
-  &__price
-    width: 180px
-    height: 180px
-    +border-radius(50%)
-    +background-image(linear-gradient(to left, #1dc777 0%, #09b309 100%))
-    position: absolute
-    top: 170px
-    right: -20px
-    font-family: 'pf_din_text_cond_prolight'
-    text-align: center
-    padding-top: 60px
-    .price--old
-      display: block
-      color: #145a32
+  ol
+    list-style-type: none
+    counter-reset: myCounter
+    padding-left: 100px
+    li
+      font-family: 'pf_din_text_cond_prolight'
       font-size: 18px
+      color: #1e1e1e
+      position: relative
+      margin-top: 55px
+      &:before
+        text-align: center
+        position: absolute
+        content: counter(myCounter)
+        counter-increment: myCounter
+        width: 80px
+        height: 80px
+        +border-radius(50%)
+        border: solid 2px #bddbef
+        color: #196ec8
+        font-family: 'bebas_neuebold'
+        font-size: 48px
+        top: -15px
+        left: -100px
+        line-height: 76px
+      &:nth-child(5), &:nth-child(7)
+        &:before
+          top: 0
+      &:last-child
+        &:before
+          top: -25px
 
-    .price--new
-      line-height: 1em
-      color: #ffffff
-      font-size: 36px
-      display: block
-  .button--about
-    font-family: 'pf_highway_sans_probold'
-    font-size: 30px
-    padding: 13px 60px
+
+
+
 
 .info
   padding: 40px 0
