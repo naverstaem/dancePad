@@ -420,9 +420,59 @@ header
       font-size: 24px
       margin-top: 100px
     &:last-child
-      margin-top: 50px
+      margin-top: 35px
       font-size: 18px
 
+.you-can
+  text-align: center
+  padding-bottom: 40px
+  h2
+    display: inline-block
+    position: relative
+    left: 155px
+    font-size: 120px
+    font-family: 'bebas_neuebold'
+    +background-image(linear-gradient(to right, rgba(#d13181,.9) 0%, rgba(#196dc7,.9) 80%))
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    text-transform: uppercase
+  .you-can__img
+    text-align: center
+    margin-top: -140px
+    img
+      width: 100%
+      max-width: 520px
+  ul
+    margin-top: 20px
+    list-style: none
+    padding-left: 60px
+    text-align: left
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 18px
+    color: #1e1e1e
+    li
+      position: relative
+      line-height: 1.2em
+      height: 60px
+      &:before
+        position: absolute
+        content: ''
+        background: url(../img/list-icon2.png) no-repeat
+        width: 40px
+        height: 40px
+        left: -60px
+        top: -8px
+      &:nth-child(1), &:nth-child(6)
+        &:before
+          top: 3px
+
+.manual
+  background: #e5f5ff
+  padding: 25px 0
+  font-family: 'pf_din_text_cond_prolight'
+  font-size: 18px
+  color: #1e1e1e
+  line-height: 1.8em
 
 
 .works
