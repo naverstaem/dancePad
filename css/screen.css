@@ -1858,8 +1858,8 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .other__price h4 { display: inline-block; font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #787878; font-weight: normal; margin: 0; }
 
 footer { background: url(../img/footer_bg.png) repeat; padding: 15px; font-family: "pf_din_text_cond_prolight"; text-align: center; }
-footer p { font-size: 14px; margin-bottom: 5px; }
-footer a { color: #0ab40a; text-decoration: underline; }
-footer a:hover, footer a:active, footer a:focus { color: #0ab40a; text-decoration: none; }
+footer p { font-size: 16px; margin-bottom: 5px; color: #787878; }
+footer a { color: #23bed2; text-decoration: underline; }
+footer a:hover, footer a:active, footer a:focus { color: #23bed2; text-decoration: none; }
 
 @media (max-width: 768px) { h1, h2 { font-size: 24px !important; } }
