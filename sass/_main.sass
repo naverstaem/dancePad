@@ -387,15 +387,16 @@ header
   padding: 20px 0
   .requirements__in
     padding: 30px 45px
+    position: relative
     +border-radius(2px)
     +background-clip(padding-box)
     +background-image(linear-gradient(to left, #fff 0%, #e5f5ff 100%))
-  .requirements__ico
+  &__ico
     display: inline-block
     vertical-align: top
     margin-right: 30px
 
-  .requirements__text
+  &__text
     display: inline-block
     font-family: 'pf_din_text_cond_prolight'
     color: #1e1e1e
@@ -408,7 +409,19 @@ header
       padding-left: 0
       li
         margin-top: 15px
-
+  &__img
+    display: inline-block
+    position: absolute
+    top: -60px
+  p
+    font-family: 'pf_din_text_cond_prolight'
+    color: #1e1e1e
+    &:first-child
+      font-size: 24px
+      margin-top: 100px
+    &:last-child
+      margin-top: 50px
+      font-size: 18px
 
 
 
