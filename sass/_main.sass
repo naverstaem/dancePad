@@ -436,7 +436,7 @@ header
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
     text-transform: uppercase
-  .you-can__img
+  &__img
     text-align: center
     margin-top: -140px
     img
@@ -695,23 +695,31 @@ footer
 
 
 //media queries
-//@media (max-width: $screen-md-min)
-//  .features
-//    .row
-//      &:last-child
-//        top: 0
-//    &__text
-//      margin-top: 90px
-//  header
-//    .header__discount
-//      left: 0
-//      z-index: 1
-//  .header--bottom
-//    .header__discount--bottom
-//      left: 390px
+@media (max-width: $screen-md-min)
+  .requirements
+    &__img
+      top: 100px
+  .you-can
+    &__img
+      margin-top: 0
+    h2
+      left: 0
+  .features
+    &__text
+      padding-top: 100px
+  header
+    .form__body
+      background: rgba(#fff,.7)
+      h3
+        color: #1e1e1e
+    .counter
+      p
+        color: #1e1e1e
+
+
 @media (max-width: $screen-sm-min)
   h1, h2
-    font-size: 24px !important
+    font-size: 32px !important
   //.header--bottom
   //  .header__discount--bottom
   //    left: 0
