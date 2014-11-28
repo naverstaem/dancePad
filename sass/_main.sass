@@ -549,91 +549,104 @@ header
 
 
 .other
-  padding: 60px 0
+  margin-top: 0
+  padding-top: 30px
+  padding-bottom: 70px
+  h2
+    margin-bottom: 20px
   &__item
-    border: solid 2px #dbdbdb
-    padding: 25px 15px
-    margin-top: 50px
-    position: relative
-    &:after
-      position: absolute
-      content: "-20%"
-      background: black
-      width: 50px
-      height: 50px
-      +border-radius(2px)
-      color: #ffffff
-      font-size: 18px
-      text-align: center
-      top: -25px
-      right: -25px
-      font-family: 'pf_din_text_cond_prolight'
-      padding-top: 14px
+    width: 100%
+    text-align: center
+    padding: 25px 10px
+    border: solid 2px #e6e6e6
+    margin-top: 10px
+  &__caption
+    font-size: 24px
+    font-family: 'conv_pfdintextcondpro-light'
+    margin-bottom: 10px
+    color: #281e1e
+    text-transform: none
   &__img
     display: inline-block
-    width: 100px
-    max-width: 140px
-    height: auto
-    vertical-align: top
-    margin-right: 25px
     img
-      display: block
-  &__text
-    display: inline-block
-    width: 100%
-  &__caption
-    font-size: 30px
-    font-family: 'pf_din_text_cond_prothin'
-    margin-bottom: 10px
-    color: #d21414
-    text-transform: none
-    line-height: 1em
 
-  &__intro
-    font-family: 'pf_din_text_cond_prolight'
-    font-size: 14px
-    color: #1e1e1e
-  &__more
-    color: #1ebefa
+      display: block
+      width: 100%
+      max-width: 290px
+  &__bottom
+    margin-top: 35px
+  &__price
+    +box
+    line-height: 1.4em
+    text-align: left
+    display: inline-block
+    vertical-align: middle
+    margin-top: 0
+    h3
+      font-family: 'conv_pfdintextcondpro-thin'
+      font-size: 48px
+      font-weight: normal
+      color: #1e1e1e
+      vertical-align: middle
+      span
+        font-family: 'als_rublregular'
+        font-size: 24px
+    h4
+      display: inline-block
+      font-size: 18px
+      color: #5a5a5a
+  &__text
+    padding: 20px 10px 0
     font-size: 16px
+    color: #787878
+    text-align: center
+    margin-bottom: 5px
+    font-family: 'pf_din_text_cond_prolight'
+  &__more
+    font-family: 'pf_din_text_cond_prolight'
+    color: #23bed2
+    font-size: 18px
     text-decoration: underline
-    &:hover, &:active, &:focus
-      color: #1ebefa
+    &:hover, &:focus, &:active
       text-decoration: none
+      color: #23bed2
 
   &__form
     display: inline-block
-    width: 100%
     vertical-align: middle
-    margin-top: 10px
+    margin-left: 0
+    padding: 0 25px
     form
       margin: 0
       input
-        +placeholder
-          font-size: 16px
-        width: 100%
-        font-size: 16px
         height: 50px
-        border: 2px solid #e5e5e5
-        +border-radius(2px)
+        border: none
+        +border-radius(4px)
         +background-clip(padding-box)
-        background-color: #efefef
-        padding-left: 20px
-        margin-bottom: 10px
-
-
-      .button--other
-        font-size: 24px
-        font-family: 'pf_highway_sans_prothin'
-        color: #ffffff
-        margin-top: 0
-        +background(linear-gradient(to left, #1dc777 0%, #09b309 100%))
-        +box-shadow(0 0 0 0)
+        background: #efefef
         width: 100%
-        height: 50px
-        &:hover
-          background: lighten(#1dc777, 10%)
+        margin-bottom: 10px
+        padding-left: 15px
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
 
+        &:focus
+          +box-shadow(0 0 9px rgba(204,62,82,.13))
+      .button--other
+        margin-top: 7px
+        width: 49%
+        height: 60px
+        color: #ffffff
+        font-size: 24px
+        font-family: 'pf_highway_sans_probold'
+        border: none
+        +background(linear-gradient(to bottom, #ffc73b 0%, #db6d00 100%))
+        +box-shadow(inset 0 -4px 0 rgba(165, 27, 4, 0.2))
+        +single-text-shadow()
+        &:hover, &:focus
+          background: #ffc73b
+          color: #ffffff
+        &:active
+          +box-shadow(0 0 0 0)
 
 
   &__price
@@ -642,23 +655,23 @@ header
     text-align: left
     display: inline-block
     vertical-align: middle
-    margin-top: 8px
-    margin-bottom: 10px
+    margin-top: 20px
+    width: 49%
     h3
-      font-family: 'pf_din_text_cond_proregular'
-      font-size: 36px
+      font-family: 'bebas_neuebook'
+      font-size: 48px
       font-weight: normal
-      color: #000
+      color: #1e1e1e
       vertical-align: middle
       margin: 0
-      line-height: 1em
+      line-height: .6em
       span
         font-family: 'als_rublregular'
         font-size: 24px
     h4
       display: inline-block
       font-family: 'pf_din_text_cond_prolight'
-      font-size: 24px
+      font-size: 18px
       color: #787878
       font-weight: normal
       margin: 0
